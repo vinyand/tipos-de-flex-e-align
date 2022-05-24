@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>fundamento Flex wrap</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100PX;
+            line-height: 50px;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .BLUE{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>no wrap</h1>
+    <div class="flex-container nowrap">
+        <div class="item BLUE">1</div>
+        <div class="item green">2</div>   
+        <div class="item orange">3</div>
+        <div class="item orange">4</div>
+    </div>
+    <h1>wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item BLUE">1</div>
+        <div class="item orange">2</div>
+        <div class="item green">3</div>
+    </div>
+    <h1>wrap reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item BLUE">1</div>
+        <div class="item orange">2</div>
+        <div class="item green">3</div>
+        <div class="item green">4</div>
+    </div>
+
+    
+</body>
+</html>

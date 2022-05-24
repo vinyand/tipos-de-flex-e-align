@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-self</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            max-width: 350px;
+            
+        }
+        .align-container{
+            align-items: center;
+        }
+        .items{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: stretch;
+        }
+        .strecth{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container align-container">
+        <div class="items auto">AA</div>
+        <div class="items auto">VVV</div>
+        <div class="items auto">BBBB</div>
+        <div class="items auto">HHHH</div>
+        <div class="items auto">JJJJJ</div>
+
+    </div>
+    <div class="container">
+        <div class="items strecth">AA</div>
+        <div class="items baseline">VVV</div>
+        <div class="items center">BBBB</div>
+        <div class="items start">HHHH</div>
+        <div class="items end">JJJJJ</div>
+
+    </div>
+
+</body>
+</html>
